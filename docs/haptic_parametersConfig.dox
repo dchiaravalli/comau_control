@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~end_effector_x" : \b [double] The position value for x min: 0.8, default: 0.2, max: 1.4
+- \b "~end_effector_y" : \b [double] The position value for y min: 0.0, default: -0.5, max: 0.5
+- \b "~end_effector_z" : \b [double] The position value for z min: 1.0, default: 0.6, max: 1.6
+- \b "~end_effector_roll" : \b [double] The position value for roll min: -10.0, default: -0.89, max: 10.0
+- \b "~end_effector_pitch" : \b [double] The position value for pitch min: -10.0, default: 0.52, max: 10.0
+- \b "~end_effector_yaw" : \b [double] The position value for yaw min: 0.0, default: -6.28, max: 6.28
+

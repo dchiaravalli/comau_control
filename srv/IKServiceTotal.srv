@@ -1,0 +1,7 @@
+trajectory_msgs/JointTrajectory target_traj
+std_msgs/Bool wrist_compensation
+---
+trajectory_msgs/JointTrajectory q_out
+int8 status
+
+

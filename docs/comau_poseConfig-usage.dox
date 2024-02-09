@@ -1,0 +1,13 @@
+\subsubsection usage Usage
+\verbatim
+<node name="comau_control" pkg="comau_control" type="comau_control">
+  <param name="end_effector_x" type="double" value="0.8" />
+  <param name="end_effector_y" type="double" value="0.0" />
+  <param name="end_effector_z" type="double" value="1.0" />
+  <param name="end_effector_roll" type="double" value="0.0" />
+  <param name="end_effector_pitch" type="double" value="0.0" />
+  <param name="end_effector_yaw" type="double" value="0.0" />
+  <param name="activate_motion" type="bool" value="False" />
+</node>
+\endverbatim
+

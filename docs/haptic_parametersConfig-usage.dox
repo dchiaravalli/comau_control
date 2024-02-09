@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="tiago_arm_control" pkg="comau_control" type="tiago_arm_control">
+  <param name="end_effector_x" type="double" value="0.2" />
+  <param name="end_effector_y" type="double" value="-0.5" />
+  <param name="end_effector_z" type="double" value="0.6" />
+  <param name="end_effector_roll" type="double" value="-0.89" />
+  <param name="end_effector_pitch" type="double" value="0.52" />
+  <param name="end_effector_yaw" type="double" value="-6.28" />
+</node>
+\endverbatim
+

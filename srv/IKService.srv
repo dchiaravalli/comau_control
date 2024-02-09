@@ -1,0 +1,8 @@
+trajectory_msgs/JointTrajectoryPoint target_pose
+std_msgs/Bool wrist_compensation
+std_msgs/Bool restart
+---
+std_msgs/Float64MultiArray q_out
+int8 status
+
+

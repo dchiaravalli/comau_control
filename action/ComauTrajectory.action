@@ -1,0 +1,9 @@
+#goal definition
+trajectory_msgs/JointTrajectory reference_traj
+bool compensation
+---
+#result definition
+bool success
+---
+#feedback
+float32 task_percentage

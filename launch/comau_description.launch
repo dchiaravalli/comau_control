@@ -1,0 +1,4 @@
+<launch>
+ 	<param name="robot_description" command="$(find xacro)/xacro.py '/home/davide/ros/sloshing_ws/src/comau_control/urdf/comau_smart_six.urdf.xacro'"/>	
+
+</launch>
