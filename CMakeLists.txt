@@ -12,12 +12,12 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   trajectory_msgs
   actionlib_msgs
+  actionlib
   sensor_msgs
   message_generation
   dynamic_reconfigure
   kdl_parser
   kdl_conversions
-  ss_exponential_filter
   comau_traj
 )
 find_package( Eigen3 REQUIRED )
@@ -114,18 +114,18 @@ add_executable(kinematics_test src/kinematics_test.cpp)
 add_dependencies(kinematics_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(kinematics_test ${catkin_LIBRARIES})
 
-add_executable(trail_rotation src/trail_rotation.cpp)
-add_dependencies(trail_rotation ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(trail_rotation ${catkin_LIBRARIES} ss_exponential_filter comauik)
+# add_executable(trail_rotation src/trail_rotation.cpp)
+# add_dependencies(trail_rotation ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(trail_rotation ${catkin_LIBRARIES} ss_exponential_filter comauik)
 
 add_executable(force_reader src/force_reader.cpp)
 add_dependencies(force_reader ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(force_reader ${catkin_LIBRARIES} )
 
 
-add_executable(move_comau_to_target src/move_comau_to_target.cpp)
-add_dependencies(move_comau_to_target ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(move_comau_to_target ${catkin_LIBRARIES} ss_exponential_filter comauik)
+# add_executable(move_comau_to_target src/move_comau_to_target.cpp)
+# add_dependencies(move_comau_to_target ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(move_comau_to_target ${catkin_LIBRARIES} ss_exponential_filter comauik)
 
 add_executable(comau_trajectory_recorder
   src/comau_trajectory_recorder.cpp
@@ -135,13 +135,13 @@ target_link_libraries(comau_trajectory_recorder
   ${catkin_LIBRARIES}
 )
 
-add_executable(comau_sensor_test
-  src/comau_sensor_test.cpp
-)
-add_dependencies(comau_sensor_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(comau_sensor_test
-  ${catkin_LIBRARIES}
-)
+# add_executable(comau_sensor_test
+#   src/comau_sensor_test.cpp
+# )
+# add_dependencies(comau_sensor_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+# target_link_libraries(comau_sensor_test
+#   ${catkin_LIBRARIES}
+# )
 
 add_executable(comau_workspace_reconfigure
   src/comau_workspace_reconfigure.cpp
